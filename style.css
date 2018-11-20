@@ -38,3 +38,38 @@ html {
     height: var(--tableHeight);
     background-color: var(--tableColor);
 }
+
+.ball {
+    width: var(--ballSize);
+    height: var(--ballSize);
+    top: calc(50% - var(--ballSize)/2);
+    left: calc(50% - var(--ballSize)/2);
+    background-color: var(--ballColor);
+    border-radius: 50%;
+}
+
+.paddle {
+    width: var(--paddleWidth);
+    height: var(--paddleHeight);
+    background-color: var(--paddleColor);
+}
+
+.player {
+    top: calc(50% - var(--paddleHeight)/2);
+    left: var(--paddleFromEdge);
+}
+
+.ai {
+    top: calc(50% - var(--paddleHeight)/2);
+    right: var(--paddleFromEdge);
+}
+
+.result {
+    width: 100%;
+    left: 0;
+    top: 10%;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: arial, sans-serif;
+    color: black;
+}
