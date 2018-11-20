@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* table */
+    --tableWidth: 800px;
+    --tableHeight: 500px;
+    --tableColor: #333;
+    /* rockets */
+    --paddleWidth: 35px;
+    --paddleHeight: 100px;
+    --paddleColor: yellow;
+    /* ball */
+    --ballSize: 25px;
+    --ballColor: white;
+    /* position */
+    --paddleFromEdge: 50px;
+    /* animation duration */
+    --animationTime: 6s;
+}
+
+.table,
+.ball,
+.paddle,
+.result {
+    position: absolute;
+}
+
+.table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--tableWidth);
+    height: var(--tableHeight);
+    background-color: var(--tableColor);
+}
