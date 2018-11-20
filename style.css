@@ -72,4 +72,5 @@ html {
     text-align: center;
     font-family: arial, sans-serif;
     color: black;
+    transform: scale(0);
 }
